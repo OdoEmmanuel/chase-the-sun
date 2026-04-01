@@ -1,4 +1,8 @@
 import CategoryCard from '../../pages/Home/components/CategoryCard';
+import cat1Default from '../../assets/images/cat1-default.webp';
+import cat1Hover from '../../assets/images/cat1-hover.webp';
+import cat2Default from '../../assets/images/cat2-default.webp';
+import cat2Hover from '../../assets/images/cat2-hover.webp';
 
 const categories = [
   {
@@ -7,8 +11,8 @@ const categories = [
     subtitle: "Walk with Meaning",
     buttonText: "Explore Root & Road",
     link: "/collections/root-road",
-    image: "/src/assets/images/cat1-default.webp",
-    hoverImage: "/src/assets/images/cat1-hover.webp",
+    image: cat1Default,
+    hoverImage: cat1Hover,
   },
   {
     id: 2,
@@ -16,8 +20,8 @@ const categories = [
     subtitle: "Carry the Light",
     buttonText: "Explore Sun Bearers",
     link: "/collections/sun-bearers",
-    image: "/src/assets/images/cat2-default.webp",
-    hoverImage: "/src/assets/images/cat2-hover.webp",
+    image: cat2Default,
+    hoverImage: cat2Hover,
   }
 ];
 
