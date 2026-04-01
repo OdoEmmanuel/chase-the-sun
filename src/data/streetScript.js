@@ -1,10 +1,14 @@
 // src/data/streetScript.js
+import img1 from "../assets/images/street-script-1.webp";
+import img2 from "../assets/images/street-script-2.webp";
+import img3 from "../assets/images/street-script-3.webp";
+import img4 from "../assets/images/street-script-4.webp";
 
 export const showcaseImages =[
-  '/src/assets/images/street-script-1.webp',
-  '/src/assets/images/street-script-2.webp',
-  '/src/assets/images/street-script-3.webp',
-  '/src/assets/images/street-script-4.webp',
+  img1,
+  img2,
+  img3,
+  img4
 ];
 
 export const colors =[
