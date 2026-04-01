@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
   return (
     <Link to={`/product/${id}`} className="group flex flex-col">
       
-      <div className="relative aspect-4/5 w-full overflow-hidden rounded-2xl bg-[#F9F9F9] mb-6">
+      <div className="relative aspect-4/5 w-full overflow-hidden rounded-2xl bg-[#F9F9F9] mb-6 border border-black/40">
         
         <img 
           src={image} 

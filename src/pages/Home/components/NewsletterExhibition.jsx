@@ -43,7 +43,7 @@ const NewsletterExhibition = () => {
         </div>
 
         {/* Right: Exhibition */}
-        <div className="w-full lg:w-[45%] bg-[#262626] text-white p-12 lg:p-24 flex flex-col items-center text-center justify-center">
+        <div className="w-full lg:w-[45%] bg-[#262626] text-white p-12 lg:p-24 lg:px-28 flex flex-col items-center text-center justify-center">
           <h3 className="text-4xl font-serif mb-2">THE ROAR OF MR SUN</h3>
           <p className="text-sm uppercase tracking-widest text-gray-400 mb-6">An exhibition of urban fashion pieces</p>
           <p className="text-gray-300 mb-8 max-w-sm leading-relaxed">
