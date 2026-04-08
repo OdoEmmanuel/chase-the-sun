@@ -2,26 +2,31 @@ import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
   const { id, title, spec, price, image, hoverImage } = product;
-
   const formattedPrice = `N${price.toLocaleString('en-US')}`;
 
+  const containerClasses = hoverImage
+    ? "group flex flex-col"
+    : "flex flex-col";
+
   return (
-    <Link to={`/product/${id}`} className="group flex flex-col">
-      
+    <Link to={`/product/${id}`} className={containerClasses}>
+
       <div className="relative aspect-4/5 w-full overflow-hidden rounded-2xl bg-[#F9F9F9] mb-6 border border-black/40">
-        
-        <img 
-          src={image} 
+
+        {/* Base Image */}
+        <img
+          src={image}
           alt={`${title} - Base`}
           loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out group-hover:opacity-0"
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out ${hoverImage ? 'group-hover:opacity-0' : ''
+            }`}
         />
-        
+
         {hoverImage && (
-          <img 
-            src={hoverImage} 
+          <img
+            src={hoverImage}
             alt={`${title} - Worn`}
-            loading="lazy" 
+            loading="lazy"
             className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 ease-in-out group-hover:opacity-100"
           />
         )}

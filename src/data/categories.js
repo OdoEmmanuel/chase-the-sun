@@ -9,7 +9,7 @@ export const categories = [
     title: "Root & Road Collection",
     subtitle: "Walk with Meaning",
     buttonText: "Explore Root & Road",
-    link: "/collections/root-road",
+    link: "/collections/root-and-road",
     image: cat1Default,
     hoverImage: cat1Hover,
   },
@@ -18,7 +18,7 @@ export const categories = [
     title: "Sun bearers Series",
     subtitle: "Carry the Light",
     buttonText: "Explore Sun Bearers",
-    link: "/collections/sun-bearers",
+    link: "/collections/sunbearers",
     image: cat2Default,
     hoverImage: cat2Hover,
   }

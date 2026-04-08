@@ -1,7 +1,9 @@
 import ProductCard from '../../../components/ui/ProductCard';
-import { newArrivals } from '../../../data/products';
+import { getProductsByCollection } from '../../../data/products';
 
 const NewArrivals = () => {
+  const newArrivals = getProductsByCollection('new-arrivals');
+  
   return (
     <section className="py-20 px-28 bg-white">
       <div className="container mx-auto">

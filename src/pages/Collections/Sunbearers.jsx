@@ -2,13 +2,14 @@ import ProductShowcase from '../../components/shared/ProductShowcase';
 import ProductGrid from '../../components/shared/ProductGrid';
 import CollectionCategories from '../../components/shared/CollectionCategories';
 import { getProductsByCollection } from '../../data/products';
-import { showcaseImages, colors, sizes } from '../../data/streetScript';
 
-const StreetScript = () => {
-  const products = getProductsByCollection('new-arrivals');
+import { showcaseImages, colors, sizes } from '../../data/sunbearers'; 
+
+const Sunbearers = () => {
+  const sunbearersProducts = getProductsByCollection('sunbearers');
 
   const collectionDetails = {
-    title: "Street Script Collection",
+    title: "Sunbearers Collection",
     description: "This series is born from the real language of the street. It turns Nigerian slang and humour into bold expression. When you wear it, you carry everyday culture with pride."
   };
 
@@ -22,7 +23,7 @@ const StreetScript = () => {
         description={collectionDetails.description}
       />
 
-      <ProductGrid products={products} />
+      <ProductGrid products={sunbearersProducts} />
 
       <div className="border-t border-gray-100">
         <CollectionCategories />
@@ -31,4 +32,4 @@ const StreetScript = () => {
   );
 };
 
-export default StreetScript;
+export default Sunbearers;

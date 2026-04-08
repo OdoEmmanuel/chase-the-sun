@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import { Mail, Phone, ChevronDown } from 'lucide-react';
-import Button from '../../components/ui/Button';
+import Button from '../ui/Button';
 
-import { showcaseImages, colors, sizes } from '../../data/streetScript';
-
-const ProductShowcase = () => {
-  const [selectedColor, setSelectedColor] = useState('Black');
-  const[selectedSize, setSelectedSize] = useState('');
+const ProductShowcase = ({ 
+  images = [], 
+  colors = [], 
+  sizes = [], 
+  title = '', 
+  description = '' 
+}) => {
+  const [selectedColor, setSelectedColor] = useState(colors[0]?.name || '');
+  const [selectedSize, setSelectedSize] = useState('');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
@@ -14,12 +18,12 @@ const ProductShowcase = () => {
       
       {/* LEFT SIDE: Image Gallery */}
       <div className="w-full lg:w-1/2 flex lg:flex-col overflow-x-auto lg:overflow-visible snap-x snap-mandatory lg:snap-none hide-scrollbar">
-        {showcaseImages.map((img, index) => (
+        {images.map((img, index) => (
           <img 
             key={index}
             src={img} 
-            alt={`Street Script Lifestyle ${index + 1}`}
-            className="w-full h-[70vh] lg:h-auto object-cover shrink-0 snap-center"
+            alt={`${title} Lifestyle ${index + 1}`}
+            className="w-full h-[70vh] lg:h-screen object-cover shrink-0 snap-center"
           />
         ))}
       </div>
@@ -29,15 +33,14 @@ const ProductShowcase = () => {
         
         <div className="max-w-md mx-auto lg:mx-0 text-center lg:text-left">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium text-gray-900 mb-6">
-            Street Script Collection
+            {title}
           </h1>
           
           <p className="text-gray-600 mb-10 leading-relaxed font-light">
-            This series is born from the real language of the street. 
-            It turns Nigerian slang and humour into bold expression. 
-            When you wear it, you carry everyday culture with pride.
+            {description}
           </p>
 
+          {/* Color Selection */}
           <div className="flex items-center justify-center lg:justify-start gap-3 mb-10">
             <span className="text-sm text-gray-500 mr-2">Colours:</span>
             {colors.map((color) => (
@@ -60,8 +63,8 @@ const ProductShowcase = () => {
             ))}
           </div>
 
+          {/* Size Dropdown Menu */}
           <div className="relative mb-16 w-full max-w-sm mx-auto lg:mx-0">
-            
             <Button 
               variant="outline-dark"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -90,6 +93,7 @@ const ProductShowcase = () => {
             )}
           </div>
 
+          {/* Assistance Links */}
           <div className="flex items-center justify-center lg:justify-start gap-8 text-sm text-gray-600">
             <span className="text-gray-400">Need assistance?</span>
             <a href="mailto:info@chaseyoursun.com" className="flex items-center gap-2 hover:text-black transition-colors">
