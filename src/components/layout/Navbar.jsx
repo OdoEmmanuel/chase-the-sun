@@ -8,11 +8,11 @@ const Navbar = () => {
     const { isMenuOpen, toggleMenu } = useUIStore();
 
     const navLinks = [
-        { name: 'ALL PRODUCTS', path: '/products' },
-        { name: 'COLLECTIONS', path: '/collections' },
-        { name: 'OUR STORY', path: '/our-story' },
-        { name: 'EVENTS', path: '/events' },
-        { name: 'CONTACT US', path: '/contact' },
+        { name: 'ALL PRODUCTS', path: '/products', disabled: true },
+        { name: 'COLLECTIONS', path: '/collections', disabled: true },
+        { name: 'OUR STORY', path: '/our-story', disabled: false },
+        { name: 'EVENTS', path: '/events', disabled: true },
+        { name: 'CONTACT US', path: '/contact', disabled: true },
     ];
 
     return (
@@ -51,7 +51,7 @@ const Navbar = () => {
                 </div>
             </nav>
 
-         
+
             <AnimatePresence>
                 {isMenuOpen && (
                     <>
@@ -85,13 +85,22 @@ const Navbar = () => {
                                 <ul className="flex flex-col">
                                     {navLinks.map((link) => (
                                         <li key={link.name} className="border-b border-gray-200">
-                                            <Link
-                                                to={link.path}
-                                                onClick={toggleMenu} // Close menu when navigating
-                                                className="block py-5 text-[15px] font-medium tracking-widest text-gray-900 hover:text-gray-500 transition-colors"
-                                            >
-                                                {link.name}
-                                            </Link>
+                                            {link.disabled ? (
+                                                <span
+                                                    aria-disabled="true"
+                                                    className="block py-5 text-[15px] font-medium tracking-widest text-gray-400 cursor-not-allowed"
+                                                >
+                                                    {link.name}
+                                                </span>
+                                            ) : (
+                                                <Link
+                                                    to={link.path}
+                                                    onClick={toggleMenu}
+                                                    className="block py-5 text-[15px] font-medium tracking-widest text-gray-900 hover:text-gray-500 transition-colors"
+                                                >
+                                                    {link.name}
+                                                </Link>
+                                            )}
                                         </li>
                                     ))}
                                 </ul>
