@@ -5,7 +5,7 @@ const NewArrivals = () => {
   const newArrivals = getProductsByCollection('new-arrivals');
   
   return (
-    <section className="py-20 px-28 bg-white">
+    <section className="py-20 px-10 md:px-28 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-black mb-3">

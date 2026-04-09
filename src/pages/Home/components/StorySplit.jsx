@@ -4,7 +4,7 @@ import storyImage from '../../../assets/images/story-feature.webp';
 
 const StorySplit = () => {
   return (
-    <section className="w-full bg-white py-10 px-28">
+    <section className="w-full bg-white py-10 px-10 md:px-28">
       <div className="flex flex-col lg:flex-row items-center w-full mx-auto">
         
         <div className="w-full lg:w-1/2 h-125 lg:h-175 overflow-hidden">

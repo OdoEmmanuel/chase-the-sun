@@ -9,12 +9,12 @@ const HeroSection = () => {
         src={heroImage} 
         alt="Chase Your Sun Collection"
         className="absolute inset-0 w-full h-full object-cover"
-        fetchpriority="high" // This tells the browser to download this FIRST
+        fetchpriority="high"
       />
 
       <div className="absolute inset-0 bg-black/40" />
 
-      <div className="relative z-10 flex flex-col items-center justify-end md:justify-center h-full text-center text-white px-6">
+      <div className="relative z-10 flex flex-col items-center justify-end h-full text-center text-white px-6">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
           Built from motion. Rooted in Africa
         </h1>
@@ -23,7 +23,7 @@ const HeroSection = () => {
         </p>
         
         {/* Using our Reusable Button component */}
-        <Button variant="outline-light" className='mb-20 md:mb-0'>
+        <Button variant="outline-light" className='mb-14'>
           Explore the Collection
         </Button>
       </div>
