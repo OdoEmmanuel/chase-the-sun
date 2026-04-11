@@ -26,7 +26,7 @@ const Sunbearers = () => {
       <ProductGrid products={sunbearersProducts} />
 
       <div className="border-t border-gray-100">
-        <CollectionCategories />
+        <CollectionCategories excludeId={2} />
       </div>
     </div>
   );

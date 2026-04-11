@@ -10,9 +10,10 @@ export const showcaseImages = [
   root4Default,
 ];
 
-export const colors = [
+export const colors =[
   { name: 'Black', hex: '#000000' },
-  { name: 'White', hex: '#FFFFFF' },
+  { name: 'Dark Brown', hex: '#3E2723' },
+  { name: 'Navy Blue', hex: '#0D47A1' },
 ];
 
 export const sizes = ['Small', 'Medium', 'Large', 'X-Large'];

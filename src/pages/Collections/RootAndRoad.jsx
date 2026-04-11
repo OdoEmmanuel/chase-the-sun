@@ -8,8 +8,8 @@ const RootAndRoad = () => {
     const products = getProductsByCollection('root-road');
 
     const collectionDetails = {
-        title: "Street Script Collection",
-        description: "This series is born from the real language of the street. It turns Nigerian slang and humour into bold expression. When you wear it, you carry everyday culture with pride."
+        title: "Root & Road Collection",
+        description: "Every journey begins with a root beneath the surface. These white tees speak softly, carrying memory, wisdom, and quiet resolve. What you wear reminds you where you come from and where you’re going."
     };
     return (
         <div className="flex flex-col min-h-screen pt-20 bg-white">
@@ -24,7 +24,7 @@ const RootAndRoad = () => {
             <ProductGrid products={products} />
 
             <div className="border-t border-gray-100">
-                <CollectionCategories />
+                <CollectionCategories excludeId={1} />
             </div>
         </div>
     );

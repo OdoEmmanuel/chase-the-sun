@@ -25,7 +25,7 @@ const StreetScript = () => {
       <ProductGrid products={products} />
 
       <div className="border-t border-gray-100">
-        <CollectionCategories />
+        <CollectionCategories excludeId={3} />
       </div>
     </div>
   );
