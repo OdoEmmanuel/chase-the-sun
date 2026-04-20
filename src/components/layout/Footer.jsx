@@ -44,7 +44,7 @@ const Footer = () => {
             </button>
           </div>
           <div className="text-xs text-gray-500 space-y-1 mt-4">
-            <p>479 Evergreen Rd. Roseville, CA 95673</p>
+            {/* <p>479 Evergreen Rd. Roseville, CA 95673</p> */}
             <p>+44 345 678 903</p>
             <p>info@chaseyoursun.com</p>
           </div>
