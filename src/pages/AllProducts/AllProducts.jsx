@@ -1,5 +1,6 @@
 import ProductsHero from './components/ProductsHero';
 import ProductGrid from '../../components/shared/ProductGrid';
+import NewsletterMinimal from '../../components/shared/NewsletterMinimal';
 import { catalogProducts } from '../../data/products';
 
 const AllProducts = () => {
@@ -9,6 +10,7 @@ const AllProducts = () => {
 
       <div className="py-8">
         <ProductGrid products={catalogProducts} />
+        <NewsletterMinimal />
       </div>
     </div>
   );

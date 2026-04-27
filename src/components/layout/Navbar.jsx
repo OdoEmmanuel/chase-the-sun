@@ -9,10 +9,10 @@ const Navbar = () => {
 
     const navLinks =[
         { name: 'ALL PRODUCTS', path: '/all-products', disabled: false },
-        { name: 'COLLECTIONS', path: '/collections', disabled: true },
+        { name: 'COLLECTIONS', path: '/collections/street-script', disabled: false },
         { name: 'OUR STORY', path: '/our-story', disabled: false },
         { name: 'EVENTS', path: '/events', disabled: true },
-        { name: 'CONTACT US', path: '/contact', disabled: true },
+        { name: 'CONTACT US', path: '/contact', disabled: false },
     ];
 
     return (
@@ -40,13 +40,13 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex items-center space-x-3 md:space-x-6 z-10 relative">
-                    <button className="hover:text-gray-300 transition-colors" aria-label="Search">
+                    <button className="hover:text-gray-300 transition-colors cursor-pointer" aria-label="Search">
                         <Search className="w-5 h-5 md:w-5.5 md:h-5.5" strokeWidth={1.5} />
                     </button>
-                    <button className="hover:text-gray-300 transition-colors" aria-label="Account">
+                    <button className="hover:text-gray-300 transition-colors cursor-pointer" aria-label="Account">
                         <User className="w-5 h-5 md:w-5.5 md:h-5.5" strokeWidth={1.5} />
                     </button>
-                    <button className="hover:text-gray-300 transition-colors relative" aria-label="Cart">
+                    <button className="hover:text-gray-300 transition-colors relative cursor-pointer" aria-label="Cart">
                         <ShoppingBag className="w-5 h-5 md:w-5.5 md:h-5.5" strokeWidth={1.5} />
                     </button>
                 </div>

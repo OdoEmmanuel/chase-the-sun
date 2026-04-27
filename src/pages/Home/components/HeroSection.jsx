@@ -22,8 +22,7 @@ const HeroSection = () => {
           Streetwear inspired by African resilience and the courage to keep going.
         </p>
         
-        {/* Using our Reusable Button component */}
-        <Button variant="outline-light" className='mb-14'>
+        <Button variant="outline-light" className='mb-14' to='/collections/street-script'>
           Explore the Collection
         </Button>
       </div>

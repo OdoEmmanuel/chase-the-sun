@@ -9,6 +9,7 @@ import OurStory from './pages/OurStory/OurStory';
 import RootAndRoad from './pages/Collections/RootAndRoad';
 import Sunbearers from './pages/Collections/Sunbearers';
 import AllProducts from './pages/AllProducts/AllProducts';
+import Contact from './pages/Contact/Contact';
 import NotFound from './pages/NotFound/NotFound';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/collections/root-and-road" element={<RootAndRoad />} />
             <Route path="/collections/sunbearers" element={<Sunbearers />} />
             <Route path="/all-products" element={<AllProducts />} />
+            <Route path="/contact" element={<Contact />} />
             {/* <Route path="/cart" element={<Cart />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>

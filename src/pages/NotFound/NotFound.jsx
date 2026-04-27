@@ -14,14 +14,13 @@ const NotFound = () => {
         or is temporarily unavailable.
       </p>
 
-      {/* Primary Action */}
       <div className="flex gap-4">
         <Link to="/">
           <Button variant="solid-light">
             Go Home
           </Button>
         </Link>
-        <Link to="/products">
+        <Link to="/all-products">
           <Button variant="outline-light">
             Shop Products
           </Button>
