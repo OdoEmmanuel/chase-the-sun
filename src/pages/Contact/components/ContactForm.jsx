@@ -24,7 +24,7 @@ const ContactForm = () => {
     setErrorMessage('');
 
     try {
-      const API_URL = 'https://your-php-server.com/contact.php'; 
+      const API_URL = 'http://localhost:8000/contact.php'; 
 
       const response = await fetch(API_URL, {
         method: 'POST',

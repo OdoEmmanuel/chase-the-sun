@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
 import Button from '../../../components/ui/Button';
-import logo from '../../../assets/logo.svg'; 
+// import logo from '../../../assets/logo.svg'; 
 import journeyBg from '../../../assets/images/journey-bg.webp'; 
 import exhibitionGraphic from '../../../assets/images/exhibition-graphic.webp'; 
 
 const NewsletterExhibition = () => {
   return (
     <section className="w-full">
-      <div className="bg-black py-8 flex items-center justify-center gap-20 border-t border-b border-gray-800">
+      {/* <div className="bg-black py-8 flex items-center justify-center gap-20 border-t border-b border-gray-800">
         {[...Array(5)].map((_, i) => (
           <img key={i} src={logo} alt="Brand Logo" className="h-35" />
         ))}
-      </div>
+      </div> */}
 
       {/* 2. Main Split Section */}
       <div className="flex flex-col lg:flex-row w-full min-h-150">
